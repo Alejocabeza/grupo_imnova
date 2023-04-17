@@ -1,0 +1,50 @@
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.team {
+		padding: 4rem 4rem;
+		height: auto;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 4rem;
+	}	
+
+	.team__div {
+		display: grid;
+		width: 100%;	
+		justify-items: center;
+		align-items: center;
+		grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+		row-gap: 2rem;
+	}
+
+	.team__article {
+		display: flex;
+		width: 15rem;
+		height: 20rem;
+		box-shadow: 0 0 25px var(--nepal-10);
+		border: 1px solid var(--nepal-20);
+		border-radius: 20px;
+		gap: 1.5rem;
+	}
+
+	.team__img {
+		width: 150px;
+		height: 150px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid var(--nepal-20);
+		border-radius: 50%;
+	}
+
+	.team__h3 {
+		font-size: 2rem;
+		font-style: 400;
+	}
+
+	.team__p {
+		font-size: 1rem;
+	}
+}

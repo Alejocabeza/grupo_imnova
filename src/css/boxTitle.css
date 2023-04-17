@@ -1,0 +1,39 @@
+
+.boxTitle {
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+.boxTitle__h3 {
+	font-size: 3rem;
+}
+
+.boxTitle__hr {
+	height: .4rem;
+	width: 100%;
+	background: linear-gradient(to right, var(--blue), var(--blue), var(--nepal), var(--nepal));
+	border: none;
+	border-radius: 11px;
+}
+
+.boxTitle__p {
+	font-size: 1rem;
+}
+
+@media only screen and (max-width: 1023px) {
+	.boxTitle--mobile {
+		gap: 1rem;
+		flex-direction: column;
+	}
+
+	.boxTitle__h2--mobile {
+		font-size: 3rem;
+	}
+
+	.boxTitle__hr--mobile {
+		width: 15rem;
+		background: linear-gradient(to right, var(--blue), var(--blue), var(--nepal), var(--nepal));
+	}
+}

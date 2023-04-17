@@ -1,0 +1,85 @@
+@import './header/index.css';
+@import './home/index.css';
+@import './team/index.css';
+@import './contact/index.css';
+@import './boxTitle.css';
+
+:root {
+	--black: #1f242d;
+	--black-10: #1f242d10;
+	--black-20: #1f242d20;
+	--black-30: #1f242d30;
+	--black-40: #1f242d40;
+	--black-50: #1f242d50;
+	--black-60: #1f242d60;
+	--black-70: #1f242d70;
+	--black-80: #1f242d80;
+	--black-90: #1f242d90;
+
+	--one-black: #282828;
+	--one-black-10: #28282810;
+	--one-black-20: #28282820;
+	--one-black-30: #28282830;
+	--one-black-40: #28282840;
+	--one-black-50: #28282850;
+	--one-black-60: #28282860;
+	--one-black-70: #28282870;
+	--one-black-80: #28282880;
+	--one-black-90: #28282890;
+
+	--white: #d3d8de;
+	--white-10: #d3d8de10;
+	--white-20: #d3d8de20;
+	--white-30: #d3d8de30;
+	--white-40: #d3d8de40;
+	--white-50: #d3d8de50;
+	--white-60: #d3d8de60;
+	--white-70: #d3d8de70;
+	--white-80: #d3d8de80;
+	--white-90: #d3d8de90;
+
+	--nepal: #88acc0;
+	--nepal-10: #88acc010;
+	--nepal-20: #88acc020;
+	--nepal-30: #88acc030;
+	--nepal-40: #88acc040;
+	--nepal-50: #88acc050;
+	--nepal-60: #88acc060;
+	--nepal-70: #88acc070;
+	--nepal-80: #88acc080;
+	--nepal-90: #88acc090;
+
+	--blue: #408db9;
+	--blue-10: #408db910;
+	--blue-20: #408db920
+	--blue-30: #408db930;
+	--blue-40: #408db940;
+	--blue-50: #408db950;
+	--blue-60: #408db960;
+	--blue-70: #408db970;
+	--blue-80: #408db980;
+	--blue-90: #408db990;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	max-width: 1380px;
+	margin: 0 auto;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--black);
+	color: var(--white);
+}
+
+main, main * {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}

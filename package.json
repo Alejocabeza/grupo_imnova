@@ -1,0 +1,16 @@
+{
+	"name": "grupo-imnova",
+	"version": "1.0.0",
+	"description": "Website for Grupo Imnova",
+	"main": "index.js",
+	"author": "Alejandro Cabeza",
+	"scripts": {
+		"prettier": "prettier --write .",
+	},
+	"type": "module",
+	"license": "MIT",
+	"devDependencies": {
+		"eslint": "^8.38.0",
+		"prettier": "^2.8.7"
+	}
+}
