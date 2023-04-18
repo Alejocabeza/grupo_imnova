@@ -1,0 +1,60 @@
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+	.signin {
+		padding: 0 4rem;
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+	}	
+
+	.signin__div {
+		height: auto;
+		background-color: var(--nepal-10);
+		border-radius: 20px;
+		padding: 2rem;
+		height: 35rem;
+		width: 30rem;
+		gap: 4rem;
+	}
+
+	.signin__form {
+		gap: 2rem;
+		width: 70%;
+	}
+
+	.signin__div--small {
+		background: none;
+		width: 100%;
+		height: auto;
+		gap: .5rem;
+		padding: 0;
+		align-items: flex-start;
+	}
+
+	.signin__input {
+		height: 1.5rem;
+		width: 100%;
+		background: none;
+		border: none;
+		border-bottom: 1px solid var(--blue);
+		padding: 1rem .5rem;
+		color: var(--white-50);
+		text-transform: capitalize;
+		outline: none;
+	}
+	
+
+	.signin__input--submit {
+		background: linear-gradient( to left, var(--blue-90), var(--blue-90), var(--blue-80), var(--blue-80));
+		box-shadow: 0 0 25px var(--blue-40);
+		border: none;
+		border-radius: 20px;
+		color: var(--white);
+		font-size: 1rem;
+		text-transform: capitalize;
+		font-weight: bold;
+	}
+}

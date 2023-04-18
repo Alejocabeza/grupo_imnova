@@ -26,7 +26,7 @@
 		box-shadow: 0 0 25px var(--nepal-10);
 		border: 1px solid var(--nepal-20);
 		border-radius: 20px;
-		gap: 1.5rem;
+		gap: 1rem;
 	}
 
 	.team__img {
@@ -40,7 +40,7 @@
 	}
 
 	.team__h3 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		font-style: 400;
 	}
 

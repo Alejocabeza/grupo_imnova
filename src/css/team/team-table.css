@@ -15,18 +15,20 @@
 		width: 100%;	
 		justify-items: center;
 		align-items: center;
-		grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-		row-gap: 2rem;
+		grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+		column-gap: .5rem;
+		row-gap: 1rem;
 	}
 
 	.team__article {
 		display: flex;
-		width: 15rem;
+		width: 100%;
 		height: 20rem;
 		box-shadow: 0 0 25px var(--nepal-10);
 		border: 1px solid var(--nepal-20);
 		border-radius: 20px;
-		gap: 1.5rem;
+		padding: .5rem;
+		gap: 1rem;
 	}
 
 	.team__img {
@@ -40,11 +42,12 @@
 	}
 
 	.team__h3 {
-		font-size: 2rem;
+		font-size: 1.3rem;
 		font-style: 400;
 	}
 
 	.team__p {
+		text-align: center;
 		font-size: 1rem;
 	}
 }

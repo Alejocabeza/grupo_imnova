@@ -1,18 +1,17 @@
-
 .boxTitle {
-	flex-direction: row;
+	flex-direction: column;
 	width: 100%;
 	justify-content: space-between;
-	gap: 2rem;
+	gap: 1rem;
 }
 
 .boxTitle__h3 {
-	font-size: 3rem;
+	font-size: 6rem;
 }
 
 .boxTitle__hr {
 	height: .4rem;
-	width: 100%;
+	width: 20rem;
 	background: linear-gradient(to right, var(--blue), var(--blue), var(--nepal), var(--nepal));
 	border: none;
 	border-radius: 11px;
@@ -34,6 +33,11 @@
 
 	.boxTitle__hr--mobile {
 		width: 15rem;
-		background: linear-gradient(to right, var(--blue), var(--blue), var(--nepal), var(--nepal));
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.boxTitle__h2--mobile {
+		font-size: 3rem;
 	}
 }

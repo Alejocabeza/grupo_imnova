@@ -11,7 +11,7 @@
 		integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/index.css" />
-	<title>Grupo Imnova - Equipo</title>
+	<title>Grupo Imnova - Iniciar Cesión</title>
 </head>
 
 <body>
@@ -37,44 +37,25 @@
 			<span class="hamburger-inner"></span>
 		</span>
 	</button>
-	<!--TEAM-->
-	<main class="team">
-		<div class="boxTitle boxTitle--mobile">
-			<h2 class="boxTitle__h2 boxTitle__h2--mobile">Nuestro Equipo</h2>
-			<hr class="boxTitle__hr boxTitle__hr--mobile" />
-			<p class="boxTitle__p boxTitle__p--mobile">Quienes son Imnova?</p>
-		</div>
-		<div class="team__div">
-			<article class="team__article">
-				<img class="team__img" alt="Avatar 1">
-				<h3 class="team__h3">Daniel J. Cabeza S.</h3>
-				<p class="team__p">Fundador</p>
-			</article>
-			<article class="team__article">
-				<img class="team__img" alt="Avatar 2">
-				<h3 class="team__h3">Denny J. Mora G.</h3>
-				<p class="team__p">Fundador</p>
-			</article>
-			<article class="team__article">
-				<img class="team__img" alt="Avatar 3">
-				<h3 class="team__h3">Leidy A. Chacón B.</h3>
-				<p class="team__p">Arquitecto Diseñador</p>
-			</article>
-			<article class="team__article">
-				<img class="team__img" alt="Avatar 4">
-				<h3 class="team__h3">Juliana M. Velandia N.</h3>
-				<p class="team__p">Gestión Ambiental y de calidad</p>
-			</article>
-			<article class="team__article">
-				<img class="team__img" alt="Avatar 5">
-				<h3 class="team__h3">Laura A. Cabeza S.</h3>
-				<p class="team__p">Ingeniero Calculista</p>
-			</article>
-			<article class="team__article">
-				<img class="team__img" alt="Avatar 6">
-				<h3 class="team__h3">Olga E. Mora R.</h3>
-				<p class="team__p">Ingeniero Proyectista</p>
-			</article>
+	<!--Login-->
+	<main class="login">
+		<div class="login__div">
+			<div class="boxTitle boxTitle--mobile">
+				<h2 class="boxTitle__h2 boxTitle__h2--mobile">Iniciar Cesión</h2>
+				<hr class="boxTitle__hr boxTitle__hr--mobile" />
+				<p class="boxTitle__p boxTitle__p--mobile">Accede a tu cuenta</p>
+			</div>
+			<form class="login__form" id="formLogin" method="post" action="">
+				<div class="login__div login__div--small">
+					<input class="login__input" id="login_email" name="login_email" type="email" placeholder="email" />
+				</div>
+				<div class="login__div login__div--small">
+					<input class="login__input" id="login_pass" name="login_pass" type="password"
+						placeholder="password" />
+				</div>
+				<input class="login__input login__input--submit" type="submit" id="login_submit" name="submit"
+					value="Entrar" />
+			</form>
 		</div>
 	</main>
 	<script src="js/index.js" type="module"></script>
