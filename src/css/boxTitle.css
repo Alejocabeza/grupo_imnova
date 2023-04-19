@@ -37,6 +37,9 @@
 }
 
 @media only screen and (min-width: 1024px) {
+	.boxTitle * {
+		margin: 0;
+	}
 	.boxTitle__h2--mobile {
 		font-size: 3rem;
 	}

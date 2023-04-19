@@ -37,6 +37,7 @@
 		align-items: center;
 		border: 1px solid var(--nepal-20);
 		border-radius: 50%;
+		object-fit: cover;
 	}
 
 	.team__h3 {
@@ -46,5 +47,18 @@
 
 	.team__p {
 		font-size: 1rem;
+	}
+
+	.team__button {
+		border: none;
+		border-radius: 10px;
+		height: 2.5rem;
+		width: 10rem;
+		background: var(--blue-50);
+		color: var(--white);
+	}
+
+	.team__button:hover {
+		background: var(--blue-90);
 	}
 }

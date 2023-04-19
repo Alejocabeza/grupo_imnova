@@ -1,0 +1,56 @@
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+	.modalCustom {
+		background: var(--black-90);
+		visibility: hidden;	
+		transition: all .5s;
+	}
+
+	.modalCustom--open {
+		visibility: visible;
+	}
+
+	.modalCustom__div {
+		transform: translateY(-300%);
+		visibility: hidden;
+		position: relative;
+		width: 30rem;
+		border: 1px solid var(--blue-10);
+		padding: 4rem;
+		box-shadow: 0 0 25px var(--white-40);
+		background: var(--nepal-70);
+		gap: 1rem;
+		transition: all 1s
+	}
+
+	.modalCustom__div--open {
+		transform: translateY(0%);
+		visibility: visible;
+	}
+
+	.modalCustom__div * {
+		margin: 0;
+	}
+
+	.modalCustom__button {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		font-size: 1.5rem;
+		border: none;
+		border-radius: 20px;
+		background: none;
+		height: 3rem;
+		width: 8rem;
+		color: var(--white);
+	}
+
+	.modalCustom__button:hover {
+		background: var(--black-40);
+	}
+
+	.modalCustom__img {
+		height: 75%;
+		width: 50%;
+		object-fit: cover;
+	}
+}

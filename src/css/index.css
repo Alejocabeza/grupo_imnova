@@ -5,6 +5,7 @@
 @import "./services/index.css";
 @import './login/index.css';
 @import './signin/index.css';
+@import './modal/index.css';
 @import './boxTitle.css';
 
 :root {
