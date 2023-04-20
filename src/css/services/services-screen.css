@@ -25,7 +25,25 @@
 		padding: 4rem;
 		border-radius: 20px;
 	}
+
+	.services__article--image {
+		background-repeat: no-repeat;
+		background-position: center;
+		object-fit: contain ;
+	}
+
+	.img4 {
+		background: linear-gradient(var(--black), var(--black-10), var(--black)), url('../../static/assests/images/image4.jpg');
+	}
 	
+	.img5 {
+		background: linear-gradient(var(--black), var(--black-10), var(--black)), url('../../static/assests/images/image5.jpg');
+	}
+
+	.img6 {
+		background: linear-gradient(var(--black), var(--black-10), var(--black)), url('../../static/assests/images/image6.jpg');
+	}
+
 	.services__h3 {
 		font-size: 2rem;
 	}
