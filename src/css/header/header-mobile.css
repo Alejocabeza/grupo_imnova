@@ -52,6 +52,35 @@
 		border-radius: 1rem;
 	}
 
+	.header__button {
+		width: 12rem;
+		padding: 1rem;
+		text-align: center;
+		border: none;
+		border-radius: 20px;
+		background: var(--nepal);
+		color: var(--black);
+		font-size: 1.2rem;
+	}
+
+	.button {
+		padding: 0;
+		height: 0px;
+		overflow: hidden;
+		transition: all 1s;
+		margin-top: 1.5rem;
+	}
+
+	.button--active {
+		height:  10rem;
+		padding: 2rem;
+	}
+
+	.header__button:hover{
+		background-color: var(--blue);
+		color: var(--white);
+	}
+
 	.button__a {
 		background-color: var(--nepal);
 		font-size: 1.5rem;
@@ -62,7 +91,7 @@
 		text-align: center;
 		color: var(--black);
 		transition: all 0.5s;
-		width: 20rem;
+		width: 16rem;
 	}
 
 	.button__a:hover {
@@ -71,7 +100,7 @@
 	}
 
 	.header--isActive {
-		transform: translateX(0);
+	transform: translateX(0);
 	}
 
 	.hamburger--button {

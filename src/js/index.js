@@ -6,18 +6,19 @@ import { person } from "./data/persons.js"
 
 document.addEventListener('DOMContentLoaded', () => {
 	// FUNCTIONALITY HEADER
-	const header = new Header()
-	header.handleMenuMobile('.hamburger--button', '.header')
-	header.handleActiveLink('.header__a')
+	const header = new Header('.hamburger--button', '.header', '.header__a', '.header__button', '.button')
+	header.handleMenuMobile()
+	header.handleActiveLink()
+	header.handleActiveSubMenu()
 	// FUNCTIONALITY HEADER
 
 	// FORM LOGIN AND REGISTER
-	const form = new FormValue()
-	form.handleSubmit('#formLogin', '#formSignin');
+	const form = new FormValue('#formLogin', '#formSignin')
+	form.handleSubmit();
 	// FORM LOGIN AND REGISTER
 
 	//Open and Close Modal
-	const modal = new Modal('#teamArticle', '#modalCustom', person)
+	const modal = new Modal('#teamArticle', '#modalCustom', person, '.modalCustom__button')
 	modal.handleOpenModal()
-	modal.handleCloseModal('.modalCustom__button')
+	modal.handleCloseModal()
 })

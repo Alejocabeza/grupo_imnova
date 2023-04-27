@@ -31,6 +31,10 @@
 		gap: 2rem;
 	}
 
+	.header__button {
+		display: none;
+	}
+
 	.header__a {
 		padding: 0.5rem 1rem;
 		font-size: 1.5rem;

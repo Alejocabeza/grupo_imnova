@@ -27,9 +27,9 @@
 	}
 
 	.contact__article--img {
-		background: url();
+		background: linear-gradient(var(--black), var(--black-10), var(--black)), url('../../static/assests/images/image3.jpg');
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: cover
 		background-position: center;
 	}
 

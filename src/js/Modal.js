@@ -1,8 +1,9 @@
 export class Modal {
-	constructor(article, modal, person) {
+	constructor(article, modal, person, btnClose) {
 		this.article = document.querySelectorAll(article)
 		this.modal = document.querySelector(modal)
 		this.persons = person
+		this.btnClose = btnClose
 	}
 
 	handleOpenModal() {
@@ -24,10 +25,9 @@ export class Modal {
 		})
 	}
 
-	handleCloseModal(btnClose) {
+	handleCloseModal() {
 		document.addEventListener('click', (e) => {
-			console.log(e.target);
-			if (e.target.matches(btnClose)) {
+			if (e.target.matches(this.btnClose)) {
 				this.modal.querySelector('.modalCustom__div').classList.remove('modalCustom__div--open')
 				this.modal.classList.remove('modalCustom--open');
 			}

@@ -1,12 +1,18 @@
 export class FormValue {
-	handleSubmit(formLogin, formSign) {
+
+	constructor(formLogin, formSign) {
+		this.formLogin = formLogin
+		this.formSign = formSign
+	}
+
+	handleSubmit() {
 		document.addEventListener('submit', (e) => {
 			e.preventDefault();
-			if (e.target.matches(formLogin)) {
+			if (e.target.matches(this.formLogin)) {
 				console.log('submit desde el login')
 			}
 
-			if (e.target.matches(formSign)) {
+			if (e.target.matches(this.formSign)) {
 				console.log('submit desde el register')
 			}
 		})

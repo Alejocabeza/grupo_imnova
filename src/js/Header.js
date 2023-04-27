@@ -1,22 +1,39 @@
 export class Header {
-	handleMenuMobile(panelBtn, panel) {
+
+	constructor(panelBtn, panel, selectItem, btnElement, panelSub) {
+		this.panelBtn = panelBtn
+		this.panel = document.querySelector(panel)
+		this.selectItem = document.querySelectorAll(selectItem)
+		this.btnElement = btnElement
+		this.panelSub = document.querySelector(panelSub)
+	}
+
+	handleMenuMobile() {
 		document.addEventListener('click', e => {
 			if (
-				e.target.matches(panelBtn) ||
-				e.target.matches(`${panelBtn} *`)
+				e.target.matches(this.panelBtn) ||
+				e.target.matches(`${this.panelBtn} *`)
 			) {
-				document.querySelector(panel).classList.toggle('header--isActive')
-				document.querySelector(panelBtn).classList.toggle('is-active')
+				this.panel.classList.toggle('header--isActive')
+				document.querySelector(this.panelBtn).classList.toggle('is-active')
 			}
 		})
 	}
 
-	handleActiveLink(selectItem) {
+	handleActiveLink() {
 		const path = window.location.pathname.replace('/', '')
-		const items = document.querySelectorAll(selectItem);
-		items.forEach((item) => {
+		this.selectItem.forEach((item) => {
 			if (item.getAttribute('href') === path) {
 				item.classList.add('header__a--active')
+			}
+		})
+	}
+
+	handleActiveSubMenu() {
+		document.addEventListener('click', (e) => {
+			if (e.target.matches(this.btnElement)) {
+				e.preventDefault();
+				this.panelSub.classList.toggle('button--active');
 			}
 		})
 	}
