@@ -1,0 +1,66 @@
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.dashboard {
+		padding: 4rem 4rem;
+		height: auto;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 4rem;
+	}	
+
+	.dashboard__div {
+		display: grid;
+		width: 100%;	
+		justify-items: center;
+		align-items: center;
+		grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+		column-gap: .5rem;
+		row-gap: 1rem;
+	}
+
+	.dashboard__article {
+		display: flex;
+		width: 100%;
+		height: 20rem;
+		box-shadow: 0 0 25px var(--nepal-10);
+		border: 1px solid var(--nepal-20);
+		border-radius: 20px;
+		padding: .5rem;
+		gap: .5rem;
+	}
+
+	.dashboard__img {
+		width: 100px;
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid var(--nepal-20);
+		border-radius: 50%;
+	}
+
+	.dashboard__h3 {
+		font-size: 1rem;
+		font-style: 400;
+	}
+
+	.dashboard__p {
+		text-align: center;
+		font-size: .8rem;
+	}
+
+	.dashboard__button {
+		border: none;
+		border-radius: 10px;
+		height: 2.5rem;
+		width: 10rem;
+		background: var(--blue-50);
+		color: var(--white);
+	}
+
+	.dashboard__button:hover {
+		background: var(--blue-90);
+	}
+}

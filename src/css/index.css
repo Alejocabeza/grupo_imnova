@@ -1,7 +1,9 @@
 @import './header/index.css';
 @import './home/index.css';
 @import './team/index.css';
+@import './dashboard/index.css';
 @import './contact/index.css';
+@import './projects/index.css';
 @import "./services/index.css";
 @import './login/index.css';
 @import './signin/index.css';

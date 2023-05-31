@@ -26,11 +26,16 @@
 			<a href="team.html" class="header__a">Equipo</a>
 			<a href="contact.html" class="header__a">Contacto</a>
 			<a href="services.html" class="header__a">Servicios</a>
+			<a href="projects.html" class="header__a">Projectos</a>
 		</nav>
 		<button type="button" class="header__button">Accounts</button>
-		<div class="header__div button">
+		<div class="header__div button" id="header__div--disable">
 			<a href="login.html" class="button__a">Ingresar</a>
 			<a href="signin.html" class="button__a">Registrarse</a>
+		</div>
+		<div class="header__div button" id="header__div--enable">
+			<a class="button__a" id="button__close">Salir</a>
+			<a class="button__a" href="dashboard.html">Perfil</a>
 		</div>
 	</header>
 	<button class="hamburger hamburger--vortex hamburger--button" type="button">
@@ -44,11 +49,15 @@
 			<div class="boxTitle boxTitle--mobile">
 				<h2 class="boxTitle__h2 boxTitle__h2--mobile">Registrate</h2>
 				<hr class="boxTitle__hr boxTitle__hr--mobile" />
-				<p class="boxTitle__p boxTitle__p--mobile">Disfruta de tus datos</p>
+				<p class="boxTitle__p boxTitle__p--mobile">Registrate para disfrutar de tus datos</p>
 			</div>
-			<form class="signin__form" id="formSignin" method="post" action="">
+			<form class="signin__form" id="formSignin">
 				<div class="signin__div signin__div--small">
-					<input class="signin__input" id="signin_branch" name="signin_branch" type="text"
+					<input class="signin__input" id="signin_name" name="signin_name" type="text"
+						placeholder="name" required />
+				</div>
+				<div class="signin__div signin__div--small">
+					<input class="signin__input" id="signin_company" name="signin_company" type="text"
 						placeholder="company" required />
 				</div>
 				<div class="signin__div signin__div--small">

@@ -1,25 +1,25 @@
 Arguments: 
-  /home/alejandrocabeza/.local/share/fnm/node-versions/v18.15.0/installation/bin/node /mnt/wslg/runtime-dir/fnm_multishells/774_1681773207394/bin/yarn start
+  /home/alejandro/.local/share/fnm/node-versions/v18.16.0/installation/bin/node /run/user/1000/fnm_multishells/34886_1685487487103/bin/yarn
 
 PATH: 
-  /mnt/wslg/runtime-dir/fnm_multishells/774_1681773207394/bin:/home/alejandrocabeza/.local/share/fnm:/mnt/wslg/runtime-dir/fnm_multishells/771_1681773207389/bin:/home/alejocabeza/.local/share/fnm:/mnt/wslg/runtime-dir/fnm_multishells/23_1681773180634/bin:/home/alejandrocabeza/.local/share/fnm:/home/alejocabeza/.local/share/fnm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-11.0.18.10-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/xampp/php:/mnt/c/composer:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/Alejandro Cabeza/scoop/apps/gcc/current/bin:/mnt/c/Users/Alejandro Cabeza/scoop/shims:/mnt/c/Users/Alejandro Cabeza/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Alejandro Cabeza/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Alejandro Cabeza/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Alejandro Cabeza/AppData/Roaming/Composer/vendor/bin:/mnt/c/Users/Alejandro Cabeza/AppData/Local/Android/Sdk/platform-tools:/snap/bin
+  /run/user/1000/fnm_multishells/34886_1685487487103/bin:/home/alejandro/.local/share/fnm:/run/user/1000/fnm_multishells/34883_1685487487067/bin:/home/alejandrocabeza/.local/share/fnm:/run/user/1000/fnm_multishells/34880_1685487487021/bin:/home/alejocabeza/.local/share/fnm:/run/user/1000/fnm_multishells/33909_1685487295678/bin:/home/alejandro/.local/share/fnm:/home/alejandrocabeza/.local/share/fnm:/home/alejocabeza/.local/share/fnm:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/opt/android-sdk/platform-tools:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin
 
 Yarn version: 
   1.22.19
 
 Node version: 
-  18.15.0
+  18.16.0
 
 Platform: 
   linux x64
 
 Trace: 
-  SyntaxError: /home/alejandrocabeza/www/grupo-imnova/package.json: Unexpected token } in JSON at position 195
+  SyntaxError: /home/alejandro/workspace/grupo_imnova/package.json: Unexpected token } in JSON at position 195
       at JSON.parse (<anonymous>)
-      at /home/alejandrocabeza/.local/share/fnm/node-versions/v18.15.0/installation/lib/node_modules/yarn/lib/cli.js:1629:59
+      at /home/alejandro/.local/share/fnm/node-versions/v18.16.0/installation/lib/node_modules/yarn/lib/cli.js:1629:59
       at Generator.next (<anonymous>)
-      at step (/home/alejandrocabeza/.local/share/fnm/node-versions/v18.15.0/installation/lib/node_modules/yarn/lib/cli.js:310:30)
-      at /home/alejandrocabeza/.local/share/fnm/node-versions/v18.15.0/installation/lib/node_modules/yarn/lib/cli.js:321:13
+      at step (/home/alejandro/.local/share/fnm/node-versions/v18.16.0/installation/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /home/alejandro/.local/share/fnm/node-versions/v18.16.0/installation/lib/node_modules/yarn/lib/cli.js:321:13
 
 npm manifest: 
   {

@@ -29,7 +29,7 @@ export class Modal {
 		document.addEventListener('click', (e) => {
 			if (e.target.matches(this.btnClose)) {
 				this.modal.querySelector('.modalCustom__div').classList.remove('modalCustom__div--open')
-				this.modal.classList.remove('modalCustom--open');
+				this.modal.classList.remove('modalCustom--open')
 			}
 		})
 	}

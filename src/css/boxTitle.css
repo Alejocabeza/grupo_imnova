@@ -21,6 +21,10 @@
 	font-size: 1rem;
 }
 
+.boxTitle__h2--dashboard {
+	font-size: 3rem;
+}
+
 @media only screen and (max-width: 1023px) {
 	.boxTitle--mobile {
 		gap: 1rem;

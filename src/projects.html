@@ -11,7 +11,7 @@
 		integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/index.css" />
-	<title>Grupo Imnova - Iniciar Cesión</title>
+	<title>Grupo Imnova - Registrarse</title>
 </head>
 
 <body>
@@ -28,7 +28,6 @@
 			<a href="services.html" class="header__a">Servicios</a>
 			<a href="projects.html" class="header__a">Projectos</a>
 		</nav>
-		<button type="button" class="header__button">Accounts</button>
 		<div class="header__div button" id="header__div--disable">
 			<a href="login.html" class="button__a">Ingresar</a>
 			<a href="signin.html" class="button__a">Registrarse</a>
@@ -43,22 +42,33 @@
 			<span class="hamburger-inner"></span>
 		</span>
 	</button>
-	<!--Login-->
-	<main class="login">
-		<div class="login__div">
+	<!--Projects-->
+	<main class="project">
+		<div class="project__div">
 			<div class="boxTitle boxTitle--mobile">
-				<h2 class="boxTitle__h2 boxTitle__h2--mobile">Iniciar Cesión</h2>
+				<h2 class="boxTitle__h2 boxTitle__h2--mobile">Nuevo Projecto</h2>
 				<hr class="boxTitle__hr boxTitle__hr--mobile" />
-				<p class="boxTitle__p boxTitle__p--mobile">Accede a tu cuenta</p>
+				<p class="boxTitle__p boxTitle__p--mobile">Dale a tu cliente avances de tu projecto</p>
 			</div>
-			<form class="login__form" id="formLogin">
-				<div class="login__div login__div--small">
-					<input class="login__input" id="login_email" name="login_email" type="email" placeholder="email" required />
+			<form class="project__form" id="formproject">
+				<div class="project__div project__div--small">
+					<input class="project__input" id="project_name" name="project_name" type="text" placeholder="nombre del project" required />
 				</div>
-				<div class="login__div login__div--small">
-					<input class="login__input" id="login_pass" name="login_pass" type="password" placeholder="password" required />
+				<div class="project__div project__div--small">
+					<select id="project_user" class="project__input">
+						<option id="project_user" class="project_option" value="hola" >Alejandro</option>
+					</select>
 				</div>
-				<input class="login__input login__input--submit" type="submit" name="submit" value="Enviar" />
+				<div class="project__div project__div--small">
+					<input class="project__input" id="project_ct_startDate" name="project_startDate" type="datetime" placeholder="fecha de inicio" required />
+				</div>
+				<div class="project__div project__div--small">
+					<input class="project__input" id="project_endDate" name="project_endDate" type="datetime" placeholder="fecha de fin" required />
+				</div>
+				<div class="project__div project__div--small">
+					<input class="project__input" id="project_description" name="project_description" type="text" placeholder="descripcion corta" required />
+				</div>
+				<input class="project__input project__input--submit" type="submit" name="submit" value="Enviar" />
 			</form>
 		</div>
 	</main>

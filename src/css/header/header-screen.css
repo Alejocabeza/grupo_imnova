@@ -12,6 +12,7 @@
 	}
 
 	.header__div {
+		margin: 0;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -60,6 +61,11 @@
 		color: var(--black);
 		transition: all 0.5s;
 		width: 10rem;
+		cursor: pointer;
+	}
+
+	.button__a--small {
+		padding: 1rem 3rem;
 	}
 
 	.button__a:hover {

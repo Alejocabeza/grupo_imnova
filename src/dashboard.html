@@ -11,7 +11,7 @@
 		integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/index.css" />
-	<title>Grupo Imnova - Iniciar Cesión</title>
+	<title>Grupo Imnova - Registrarse</title>
 </head>
 
 <body>
@@ -28,7 +28,6 @@
 			<a href="services.html" class="header__a">Servicios</a>
 			<a href="projects.html" class="header__a">Projectos</a>
 		</nav>
-		<button type="button" class="header__button">Accounts</button>
 		<div class="header__div button" id="header__div--disable">
 			<a href="login.html" class="button__a">Ingresar</a>
 			<a href="signin.html" class="button__a">Registrarse</a>
@@ -44,22 +43,21 @@
 		</span>
 	</button>
 	<!--Login-->
-	<main class="login">
-		<div class="login__div">
-			<div class="boxTitle boxTitle--mobile">
-				<h2 class="boxTitle__h2 boxTitle__h2--mobile">Iniciar Cesión</h2>
-				<hr class="boxTitle__hr boxTitle__hr--mobile" />
-				<p class="boxTitle__p boxTitle__p--mobile">Accede a tu cuenta</p>
-			</div>
-			<form class="login__form" id="formLogin">
-				<div class="login__div login__div--small">
-					<input class="login__input" id="login_email" name="login_email" type="email" placeholder="email" required />
-				</div>
-				<div class="login__div login__div--small">
-					<input class="login__input" id="login_pass" name="login_pass" type="password" placeholder="password" required />
-				</div>
-				<input class="login__input login__input--submit" type="submit" name="submit" value="Enviar" />
-			</form>
+	<main class="dashboard">
+		<div class="boxTitle boxTitle--mobile">
+			<h2 class="boxTitle__h2 boxTitle__h2--mobile boxTitle__h2--dashboard">Bienvenido: <span id="dashboard__span"></span></h2>
+			<hr class="boxTitle__hr boxTitle__hr--mobile" />
+			<p class="boxTitle__p boxTitle__p--mobile">Mira el progreso de tus projectos</p>
+		</div>
+		<template id="dashboard__template">
+			<article class="dashboard__article" id="dashboardArticle">
+				<img class="dashboard__img">
+				<h3 class="dashboard__h3"></h3>
+				<p class="dashboard__p"></p>
+				<button class="dashboard__button"></button>
+			</article>
+		</template>
+		<div class="dashboard__div">
 		</div>
 	</main>
 	<script src="js/index.js" type="module"></script>

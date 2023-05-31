@@ -6,11 +6,13 @@
 	"author": "Alejandro Cabeza",
 	"scripts": {
 		"prettier": "prettier --write .",
+		"db": "json-server --watch ./src/js/db/db.json"
 	},
 	"type": "module",
 	"license": "MIT",
 	"devDependencies": {
 		"eslint": "^8.38.0",
+		"json-server": "^0.17.3",
 		"prettier": "^2.8.7"
 	}
 }

@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "name": "Cabeza Alejandro",
+      "company": "Millonariosemprenden",
+      "email": "alejandrocabeza400@gmail.com",
+      "password": "12345678",
+      "isAdmin": true,
+      "createdAt": "2023-05-31T04:48:07.435Z",
+      "updatedAt": null,
+      "deletedAt": null,
+      "id": 1
+    }
+  ],
+  "projects": []
+}

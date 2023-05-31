@@ -1,7 +1,7 @@
-@media only screen and (min-width: 1024px) {
-	.login {
-		padding: 4rem 8rem;
-		height: auto;
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.project {
+		padding: 0 4rem;
+		height: 100vh;
 		width: 100vw;
 		display: flex;
 		flex-direction: column;
@@ -10,21 +10,21 @@
 		gap: 2rem;
 	}	
 
-	.login__div {
+	.project__div {
 		height: auto;
 		background-color: var(--nepal-10);
 		border-radius: 20px;
-		padding: 2rem;
+		padding: 4rem;
 		width: 30rem;
 		gap: 4rem;
 	}
 
-	.login__form {
+	.project__form {
 		gap: 2rem;
 		width: 70%;
 	}
 
-	.login__div--small {
+	.project__div--small {
 		background: none;
 		width: 100%;
 		height: auto;
@@ -33,7 +33,7 @@
 		align-items: flex-start;
 	}
 
-	.login__input {
+	.project__input {
 		height: 1.5rem;
 		width: 100%;
 		background: none;
@@ -45,15 +45,13 @@
 	}
 	
 
-	.login__input--submit {
-		height: 3rem;
+	.project__input--submit {
 		background: linear-gradient( to left, var(--blue-90), var(--blue-90), var(--blue-80), var(--blue-80));
 		box-shadow: 0 0 25px var(--blue-40);
 		border: none;
 		border-radius: 20px;
 		color: var(--white);
 		font-size: 1rem;
-		text-transform: capitalize;
 		font-weight: bold;
 	}
 }

@@ -41,7 +41,6 @@
 		border-bottom: 1px solid var(--blue);
 		padding: 1rem .5rem;
 		color: var(--white-50);
-		text-transform: capitalize;
 		outline: none;
 	}
 	
@@ -53,7 +52,6 @@
 		border-radius: 20px;
 		color: var(--white);
 		font-size: 1rem;
-		text-transform: capitalize;
 		font-weight: bold;
 	}
 }
