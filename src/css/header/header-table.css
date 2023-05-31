@@ -69,14 +69,6 @@
 		color: var(--white);
 	}
 
-	.button {
-		padding: 0;
-		height: 0px;
-		overflow: hidden;
-		transition: all 1s;
-		margin-top: 1.5rem;
-	}
-
 	.button--active {
 		height:  10rem;
 		padding: 2rem;

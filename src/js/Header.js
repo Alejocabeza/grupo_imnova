@@ -42,7 +42,7 @@ export class Header {
 
 	handleMenuLoginActive() {
 		if(this.session.getItem('login') !== null|undefined|false){
-			document.getElementById('header__div--enable').style.display = 'block'
+			document.getElementById('header__div--enable').style.display = 'flex'
 			document.querySelectorAll('.button__a').forEach((element) => {
 				element.classList.add('button__a--small')
 			})			
@@ -52,7 +52,7 @@ export class Header {
 			document.querySelectorAll('.button__a').forEach((element) => {
 				element.classList.remove('button__a--small')
 			})			
-			document.getElementById('header__div--disable').style.display = 'block'
+			document.getElementById('header__div--disable').style.display = 'flex'
 		}
 	}
 
@@ -60,13 +60,13 @@ export class Header {
 		if(this.session.getItem('isAdmin') !== null | undefined | false){
 			document.querySelector('.header__nav').style.gap = '1rem'
 			document.querySelectorAll('.header__a').forEach((item) => {
-				if(item.innerHTML === 'projectos') {
+				if(item.innerHTML === 'Projectos') {
 					item.style.display = 'block'
 				}
 			})
 		}else{
 			document.querySelectorAll('.header__a').forEach((item) => {
-				if(item.innerHTML === 'projectos') {
+				if(item.innerHTML === 'Projectos') {
 					item.style.display = 'none'
 				}
 			})

@@ -11,7 +11,7 @@
 		integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/index.css" />
-	<title>Grupo Imnova - Registrarse</title>
+	<title>Grupo Imnova - Proyectos</title>
 </head>
 
 <body>
@@ -52,21 +52,24 @@
 			</div>
 			<form class="project__form" id="formproject">
 				<div class="project__div project__div--small">
-					<input class="project__input" id="project_name" name="project_name" type="text" placeholder="nombre del project" required />
+					<input class="project__input" id="project_name" name="project_name" type="text"
+						placeholder="nombre del proyect" required />
 				</div>
 				<div class="project__div project__div--small">
-					<select id="project_user" class="project__input">
-						<option id="project_user" class="project_option" value="hola" >Alejandro</option>
+					<select id="project_user" class="project__select">
 					</select>
 				</div>
 				<div class="project__div project__div--small">
-					<input class="project__input" id="project_ct_startDate" name="project_startDate" type="datetime" placeholder="fecha de inicio" required />
+					<input class="project__date" id="project_ct_startDate" name="project_startDate" type="date"
+						placeholder="fecha de inicio" required />
 				</div>
 				<div class="project__div project__div--small">
-					<input class="project__input" id="project_endDate" name="project_endDate" type="datetime" placeholder="fecha de fin" required />
+					<input class="project__date" id="project_endDate" name="project_endDate" type="date"
+						placeholder="fecha de fin" required />
 				</div>
 				<div class="project__div project__div--small">
-					<input class="project__input" id="project_description" name="project_description" type="text" placeholder="descripcion corta" required />
+					<input class="project__input" id="project_description" name="project_description" type="text"
+						placeholder="descripcion corta" required />
 				</div>
 				<input class="project__input project__input--submit" type="submit" name="submit" value="Enviar" />
 			</form>

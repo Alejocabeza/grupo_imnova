@@ -45,6 +45,33 @@
 	}
 	
 
+	.project__select {
+		height: 1.5rem;
+		width: 100%;
+		background: none;
+		color: var(--white-50);
+		border: none;
+		border-bottom: 1px solid var(--blue);
+		outline: none;
+	}
+
+	.project__option {
+		background: var(--black);
+		border: none;
+		color: var(--white-50);
+	}
+
+	.project__date {
+		background: var(--black);
+		height: 1.5rem;
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid var(--blue);
+		flex-direction: row;
+		color: var(--white-50);
+		outline: none;
+	}
+
 	.project__input--submit {
 		background: linear-gradient( to left, var(--blue-90), var(--blue-90), var(--blue-80), var(--blue-80));
 		box-shadow: 0 0 25px var(--blue-40);

@@ -10,7 +10,36 @@
       "updatedAt": null,
       "deletedAt": null,
       "id": 1
+    },
+    {
+      "name": "Alejandro Cabeza",
+      "company": "GutMedica",
+      "email": "gutmedica@gmail.com",
+      "password": "12345678",
+      "isAdmin": false,
+      "createdAt": "2023-05-31T12:01:07.058Z",
+      "updatedAt": null,
+      "deletedAt": null,
+      "id": 2
+    },
+    {
+      "name": "Manuel",
+      "company": "cuaimaxima",
+      "email": "cui@gmail.com",
+      "password": "12345678",
+      "isAdmin": false,
+      "createdAt": "2023-05-31T12:50:27.125Z",
+      "updatedAt": null,
+      "deletedAt": null,
+      "id": 3
     }
   ],
-  "projects": []
+  "projects": [
+	{
+		"id": 1,
+		"userId": 3,
+		"name": "proyecto nuevo",
+		"description": "proyecto prueba"
+	}
+  ]
 }

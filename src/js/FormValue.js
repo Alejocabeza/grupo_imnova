@@ -1,5 +1,8 @@
+import { FetchData } from './FetchData.js'
+
 export class FormValue {
 	session = sessionStorage
+	fetchData = new FetchData()
 
 	handleSubmit(formLogin, formSign) {
 		document.addEventListener('submit', async (e) => {
@@ -27,7 +30,7 @@ export class FormValue {
 				}
 				//code for send email
 				if(validateEmail === true && validatePass === true) {
-					const users = await this.finderByEmail(email)
+					const users = await this.fetchData.finderByEmail(email)
 					try {
 						users.forEach(user => {
 							if(email !== user.email || password !== user.password) {
@@ -48,7 +51,7 @@ export class FormValue {
 			if (e.target.matches(formSign)) {
 				let validateEmail
 				let validatePass
-				let isAdmin
+				let isAdmin = false
 				// validation name
 				let name = document.getElementById('signin_name').value
 				let company = document.getElementById('signin_company').value
@@ -87,7 +90,7 @@ export class FormValue {
 				//code send email
 				if(validateEmail === true && validatePass === true) {
 					try{
-						await this.createNewUser(formdata)
+						await this.fetchData.createNewUser(formdata)
 						window.location.href = '/login.html'
 					}catch(e) {
 						console.log(e)
@@ -112,45 +115,5 @@ export class FormValue {
 			return false
 		}
 		return true
-	}
-
-	async createNewUser(value) {
-		const options = {
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			method: 'POST',
-			body: JSON.stringify(value)
-		}
-		const data = await fetch('http://localhost:3000/users', options)
-		const res = await data.json()
-		return res
-	}
-
-	async finderByEmail(email) {
-		let options = {
-			method: 'GET'
-		}
-		const data = await fetch(`http://localhost:3000/users?email=${email}`, options)
-		const res = await data.json()
-		return res
-	}
-
-	async finderProjectsByUser(userId) {
-		let options = {
-			method: 'GET'
-		}
-		const data = await fetch(`http://localhost:3000/projects?user=${userId}`, options)
-		const res = await data.json()
-		return res
-	}
-
-	async finderProjectsAll() {
-		let options = {
-			method: 'GET'
-		}
-		const data = await fetch('http://localhost:3000/projects', options)
-		const res = await data.json()
-		return res
 	}
 }

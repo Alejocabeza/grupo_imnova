@@ -43,6 +43,16 @@
 		color: var(--white-50);
 		outline: none;
 	}
+
+	.project__section {
+		height: 1.5rem;
+		width: 100%;
+		background: none;
+		color: var(--white-50);
+		border-bottom: 1px solid var(--blue);
+		border: none;
+		outline: none;
+	}
 	
 
 	.project__input--submit {
