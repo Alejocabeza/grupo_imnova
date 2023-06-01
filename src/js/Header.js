@@ -3,13 +3,10 @@ export class Header {
 	selectItem = document.querySelectorAll('.header__a')
 	panelSub = document.querySelector('.button')
 	session = sessionStorage
-
 	constructor(panelBtn, btnElement) {
 		this.panelBtn = panelBtn
 		this.btnElement = btnElement
-
 	}
-
 	handleMenuMobile() {
 		document.addEventListener('click', e => {
 			if (
@@ -21,7 +18,6 @@ export class Header {
 			}
 		})
 	}
-
 	handleActiveLink() {
 		const path = window.location.pathname.replace('/', '')
 		this.selectItem.forEach((item) => {
@@ -30,7 +26,6 @@ export class Header {
 			}
 		})
 	}
-
 	handleActiveSubMenu() {
 		document.addEventListener('click', (e) => {
 			if (e.target.matches(this.btnElement)) {
@@ -39,28 +34,42 @@ export class Header {
 			}
 		})
 	}
-
 	handleMenuLoginActive() {
 		if(this.session.getItem('login') !== null|undefined|false){
-			document.getElementById('header__div--enable').style.display = 'flex'
-			document.querySelectorAll('.button__a').forEach((element) => {
-				element.classList.add('button__a--small')
-			})			
-			document.getElementById('header__div--disable').style.display = 'none'
+			document.querySelectorAll('.button__a').forEach((item) => {
+				if(item.innerHTML === 'Salir') {
+					item.style.display = 'block'
+				}
+				if(item.innerHTML === 'Ingresar'){
+					item.style.display = 'none'
+				}
+			})
+			document.querySelectorAll('.header__a').forEach((item) => {
+				if(item.innerHTML === 'Dashboard'){
+					item.style.display = 'flex'
+				}
+			})
 		}else{
-			document.getElementById('header__div--enable').style.display = 'none'
-			document.querySelectorAll('.button__a').forEach((element) => {
-				element.classList.remove('button__a--small')
-			})			
-			document.getElementById('header__div--disable').style.display = 'flex'
+			document.querySelectorAll('.button__a').forEach((item) => {
+				if(item.innerHTML === 'Salir') {
+					item.style.display = 'none'
+				}
+			})
+			document.querySelectorAll('.header__a').forEach((item) => {
+				if(item.innerHTML === 'Dashboard'){
+					item.style.display = 'none'
+				}
+			})
 		}
 	}
-
 	handleMenuAdminIsActive(){
 		if(this.session.getItem('isAdmin') !== null | undefined | false){
 			document.querySelector('.header__nav').style.gap = '1rem'
 			document.querySelectorAll('.header__a').forEach((item) => {
 				if(item.innerHTML === 'Projectos') {
+					item.style.display = 'block'
+				}
+				if(item.innerHTML === 'Create Usuario'){
 					item.style.display = 'block'
 				}
 			})
@@ -69,10 +78,12 @@ export class Header {
 				if(item.innerHTML === 'Projectos') {
 					item.style.display = 'none'
 				}
+				if(item.innerHTML === 'Create Usuario'){
+					item.style.display = 'none'
+				}
 			})
 		}
 	}
-
 	handleCloseSession() {
 		document.addEventListener('click', (e) => {
 			if(e.target.matches('#button__close')) {

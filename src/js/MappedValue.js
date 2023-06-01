@@ -1,10 +1,8 @@
 import { FetchData } from './FetchData.js'
-
 export class MappedValue {
 	fetchData = new FetchData()
 	session = sessionStorage
 	pathname = window.location.pathname.replace('/', '')
-
 	async mappedData() {
 		if (this.session.getItem('emailUser') !== null | false | undefined && this.pathname === 'dashboard.html') {
 			const users = await this.fetchData.finderByEmail(this.session.getItem('emailUser'))

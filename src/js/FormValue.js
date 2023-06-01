@@ -1,9 +1,7 @@
 import { FetchData } from './FetchData.js'
-
 export class FormValue {
 	session = sessionStorage
 	fetchData = new FetchData()
-
 	handleSubmit(formLogin, formSign) {
 		document.addEventListener('submit', async (e) => {
 			e.preventDefault()
@@ -47,7 +45,6 @@ export class FormValue {
 					}
 				}
 			}
-
 			if (e.target.matches(formSign)) {
 				let validateEmail
 				let validatePass
@@ -99,7 +96,6 @@ export class FormValue {
 			}
 		})
 	}
-
 	emailValidated(email) {
 		let patron = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 		let isValidEmail = patron.test(email)
@@ -107,7 +103,6 @@ export class FormValue {
 			return false
 		}
 	}
-
 	passValidated(password) {
 		let patron = /^.{8,15}$/
 		let isValidPassword = patron.test(password)

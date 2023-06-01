@@ -5,7 +5,6 @@ export class Modal {
 		this.persons = person
 		this.btnClose = btnClose
 	}
-
 	handleOpenModal() {
 		this.article.forEach((item) => {
 			item.addEventListener('click', (e) => {
@@ -24,7 +23,6 @@ export class Modal {
 			})
 		})
 	}
-
 	handleCloseModal() {
 		document.addEventListener('click', (e) => {
 			if (e.target.matches(this.btnClose)) {

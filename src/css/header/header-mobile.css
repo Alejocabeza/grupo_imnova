@@ -63,14 +63,12 @@
 		color: var(--black);
 		font-size: 1.2rem;
 	}
-
 	.button {
 		padding: 5rem;
 		height: 0px;
 		transition: all 1s;
 		margin-top: 1.5rem;
 	}
-
 	.button--active {
 		height:  10rem;
 		padding: 2rem;
