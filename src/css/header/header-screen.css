@@ -26,6 +26,7 @@
 	}
 
 	.header__nav {
+		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -79,6 +80,34 @@
 
 	.header--unfixed {
 		position: sticky;
+	}
+
+	.header__submenu {
+		position: absolute;
+		display: grid;
+		width: 15rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		top: 100%;
+		left: 75%;
+		border-radius: 5px;
+		background-color: var(--nepal-50);
+		transition: all .5s ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.header__submenu--active {
+		opacity: 1;
+		visibility: visible;
+	}
+	
+	.header__a--submenu {
+		padding: 0.5rem 1rem;
+		font-size: 1.5rem;
+		text-decoration: none;
+		color: var(--white);
+		padding: 1rem;
 	}
 	/***************************************** STYLE HEADER *************************/
 }

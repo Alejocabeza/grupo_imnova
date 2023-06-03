@@ -66,4 +66,27 @@
 		text-transform: capitalize;
 		font-weight: bold;
 	}
+
+	.project__select {
+		height: 1.5rem;
+		width: 100%;
+		background: none;
+		border: none;
+		border-bottom: 1px solid var(--blue);
+		padding: 1rem .5rem;
+		color: var(--white-50);
+		outline: none;
+	}
+
+	.project__date {
+		height: 100%;
+		width: 100%;
+		background: none;
+		border: none;
+		border-bottom: 1px solid var(--blue);
+		flex-direction: row;
+		justify-content: space-between;
+		color: var(--white-50);
+		outline: none;
+	}
 }
