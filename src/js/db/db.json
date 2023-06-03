@@ -1,45 +1,17 @@
 {
   "users": [
-    {
-      "name": "Cabeza Alejandro",
-      "company": "Millonariosemprenden",
-      "email": "alejandrocabeza400@gmail.com",
-      "password": "12345678",
-      "isAdmin": true,
-      "createdAt": "2023-05-31T04:48:07.435Z",
-      "updatedAt": null,
-      "deletedAt": null,
-      "id": 1
-    },
-    {
-      "name": "Alejandro Cabeza",
-      "company": "GutMedica",
-      "email": "gutmedica@gmail.com",
-      "password": "12345678",
-      "isAdmin": false,
-      "createdAt": "2023-05-31T12:01:07.058Z",
-      "updatedAt": null,
-      "deletedAt": null,
-      "id": 2
-    },
-    {
-      "name": "Manuel",
-      "company": "cuaimaxima",
-      "email": "cui@gmail.com",
-      "password": "12345678",
-      "isAdmin": false,
-      "createdAt": "2023-05-31T12:50:27.125Z",
-      "updatedAt": null,
-      "deletedAt": null,
-      "id": 3
-    }
-  ],
-  "projects": [
 	{
 		"id": 1,
-		"userId": 3,
-		"name": "proyecto nuevo",
-		"description": "proyecto prueba"
+		"clientsId": null,
+		"name": "Alejandro Cabeza",
+		"email": "alejandrocabeza400@gmail.com",
+		"password": "12345678",
+		"isAdmin": true,
+		"createdAt": null,
+		"updatedAt": null,
+		"deletedAt": null
 	}
-  ]
+  ],
+  "clients": [],
+  "projects": []
 }

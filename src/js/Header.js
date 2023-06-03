@@ -3,10 +3,12 @@ export class Header {
 	selectItem = document.querySelectorAll('.header__a')
 	panelSub = document.querySelector('.button')
 	session = sessionStorage
+
 	constructor(panelBtn, btnElement) {
 		this.panelBtn = panelBtn
 		this.btnElement = btnElement
 	}
+
 	handleMenuMobile() {
 		document.addEventListener('click', e => {
 			if (
@@ -18,6 +20,7 @@ export class Header {
 			}
 		})
 	}
+
 	handleActiveLink() {
 		const path = window.location.pathname.replace('/', '')
 		this.selectItem.forEach((item) => {
@@ -26,6 +29,7 @@ export class Header {
 			}
 		})
 	}
+
 	handleActiveSubMenu() {
 		document.addEventListener('click', (e) => {
 			if (e.target.matches(this.btnElement)) {
@@ -34,6 +38,7 @@ export class Header {
 			}
 		})
 	}
+
 	handleMenuLoginActive() {
 		if(this.session.getItem('login') !== null|undefined|false){
 			document.querySelectorAll('.button__a').forEach((item) => {
@@ -62,28 +67,30 @@ export class Header {
 			})
 		}
 	}
+
 	handleMenuAdminIsActive(){
-		if(this.session.getItem('isAdmin') !== null | undefined | false){
-			document.querySelector('.header__nav').style.gap = '1rem'
+		if(this.session.getItem('isAdmin') === null|undefined|false) {
 			document.querySelectorAll('.header__a').forEach((item) => {
-				if(item.innerHTML === 'Projectos') {
-					item.style.display = 'block'
-				}
-				if(item.innerHTML === 'Create Usuario'){
-					item.style.display = 'block'
+				if(item.innerHTML === 'Administrador') {
+					item.style.display = 'none'
+					item.addEventListener('click', () => {
+						document.querySelector('.header__submenu').classList.remove('header__submenu--active')
+					})
 				}
 			})
-		}else{
-			document.querySelectorAll('.header__a').forEach((item) => {
-				if(item.innerHTML === 'Projectos') {
-					item.style.display = 'none'
-				}
-				if(item.innerHTML === 'Create Usuario'){
-					item.style.display = 'none'
-				}
-			})
+			return false
 		}
+		document.querySelectorAll('.header__a').forEach((item) => {
+			if(item.innerHTML === 'Administrador') {
+				item.style.display = 'flex'
+				item.style.cursor = 'pointer'
+				item.addEventListener('click', () => {
+					document.querySelector('.header__submenu').classList.toggle('header__submenu--active')
+				})
+			}
+		})
 	}
+
 	handleCloseSession() {
 		document.addEventListener('click', (e) => {
 			if(e.target.matches('#button__close')) {
