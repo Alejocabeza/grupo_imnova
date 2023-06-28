@@ -1,103 +1,127 @@
-export class Header {
-	panel = document.querySelector('.header')
-	selectItem = document.querySelectorAll('.header__a')
-	panelSub = document.querySelector('.button')
-	session = sessionStorage
+const panel = document.querySelector('.header')
+const selectItem = document.querySelectorAll('.header__a')
+const panelSub = document.querySelector('.button')
+const session = sessionStorage
 
-	constructor(panelBtn, btnElement) {
-		this.panelBtn = panelBtn
-		this.btnElement = btnElement
-	}
-
-	handleMenuMobile() {
-		document.addEventListener('click', e => {
-			if (
-				e.target.matches(this.panelBtn) ||
-				e.target.matches(`${this.panelBtn} *`)
-			) {
-				this.panel.classList.toggle('header--isActive')
-				document.querySelector(this.panelBtn).classList.toggle('is-active')
-			}
-		})
-	}
-
-	handleActiveLink() {
-		const path = window.location.pathname.replace('/', '')
-		this.selectItem.forEach((item) => {
-			if (item.getAttribute('href') === path) {
-				item.classList.add('header__a--active')
-			}
-		})
-	}
-
-	handleActiveSubMenu() {
-		document.addEventListener('click', (e) => {
-			if (e.target.matches(this.btnElement)) {
-				e.preventDefault()
-				this.panelSub.classList.toggle('button--active')
-			}
-		})
-	}
-
-	handleMenuLoginActive() {
-		if(this.session.getItem('login') !== null|undefined|false){
-			document.querySelectorAll('.button__a').forEach((item) => {
-				if(item.innerHTML === 'Salir') {
-					item.style.display = 'block'
-				}
-				if(item.innerHTML === 'Ingresar'){
-					item.style.display = 'none'
-				}
-			})
-			document.querySelectorAll('.header__a').forEach((item) => {
-				if(item.innerHTML === 'Dashboard'){
-					item.style.display = 'flex'
-				}
-			})
-		}else{
-			document.querySelectorAll('.button__a').forEach((item) => {
-				if(item.innerHTML === 'Salir') {
-					item.style.display = 'none'
-				}
-			})
-			document.querySelectorAll('.header__a').forEach((item) => {
-				if(item.innerHTML === 'Dashboard'){
-					item.style.display = 'none'
-				}
-			})
+/**
+	 * Esta function maneja el menu mobile
+	 * 
+	 * @param {string} panelBtn
+	 * @returns {void}
+	 */
+export function handleMenuMobile(panelBtn) {
+	document.addEventListener('click', e => {
+		if (
+			e.target.matches(panelBtn) ||
+				e.target.matches(`${panelBtn} *`)
+		) {
+			panel.classList.toggle('header--isActive')
+			document.querySelector(panelBtn).classList.toggle('is-active')
 		}
-	}
+	})
+}
 
-	handleMenuAdminIsActive(){
-		if(this.session.getItem('isAdmin') === null|undefined|false) {
-			document.querySelectorAll('.header__a').forEach((item) => {
-				if(item.innerHTML === 'Administrador') {
-					item.style.display = 'none'
-					item.addEventListener('click', () => {
-						document.querySelector('.header__submenu').classList.remove('header__submenu--active')
-					})
-				}
-			})
-			return false
+/**
+	 * Esta function maneja los links activos
+	 * 
+	 * @returns {void}
+	 */
+export function handleActiveLink() {
+	const path = window.location.pathname.replace('/', '')
+	selectItem.forEach((item) => {
+		if (item.getAttribute('href') === path) {
+			item.classList.add('header__a--active')
 		}
+	})
+}
+
+/**
+	 * Esta function maneja el submenu activo
+	 * 
+	 * @param {string} btnElement
+	 * @returns {void}
+	 */
+export function handleActiveSubMenu(btnElement) {
+	document.addEventListener('click', (e) => {
+		if (e.target.matches(btnElement)) {
+			e.preventDefault()
+			panelSub.classList.toggle('button--active')
+		}
+	})
+}
+
+/**
+	 * Esta function maneja el menu login activo
+	 * 
+	 * @returns {void}
+	 */
+export function handleMenuLoginActive() {
+	if(session.getItem('login') !== null|undefined|false){
+		document.querySelectorAll('.button__a').forEach((item) => {
+			if(item.innerHTML === 'Salir') {
+				item.style.display = 'block'
+			}
+			if(item.innerHTML === 'Ingresar'){
+				item.style.display = 'none'
+			}
+		})
+		document.querySelectorAll('.header__a').forEach((item) => {
+			if(item.innerHTML === 'Dashboard'){
+				item.style.display = 'flex'
+			}
+		})
+	}else{
+		document.querySelectorAll('.button__a').forEach((item) => {
+			if(item.innerHTML === 'Salir') {
+				item.style.display = 'none'
+			}
+		})
+		document.querySelectorAll('.header__a').forEach((item) => {
+			if(item.innerHTML === 'Dashboard'){
+				item.style.display = 'none'
+			}
+		})
+	}
+}
+
+/**
+	 * Esta function maneja el menu admin activo
+	 * 
+	 * @returns {void}
+	 */
+export function handleMenuAdminIsActive(){
+	if(session.getItem('isAdmin') === null|undefined|false) {
 		document.querySelectorAll('.header__a').forEach((item) => {
 			if(item.innerHTML === 'Administrador') {
-				item.style.display = 'flex'
-				item.style.cursor = 'pointer'
+				item.style.display = 'none'
 				item.addEventListener('click', () => {
-					document.querySelector('.header__submenu').classList.toggle('header__submenu--active')
+					document.querySelector('.header__submenu').classList.remove('header__submenu--active')
 				})
 			}
 		})
+		return false
 	}
+	document.querySelectorAll('.header__a').forEach((item) => {
+		if(item.innerHTML === 'Administrador') {
+			item.style.display = 'flex'
+			item.style.cursor = 'pointer'
+			item.addEventListener('click', () => {
+				document.querySelector('.header__submenu').classList.toggle('header__submenu--active')
+			})
+		}
+	})
+}
 
-	handleCloseSession() {
-		document.addEventListener('click', (e) => {
-			if(e.target.matches('#button__close')) {
-				this.session.clear()
-				window.location.href = '/index.html'
-			}
-		})
-	}
-	
+/**
+	 * Esta function maneja el cierra de session
+	 * 
+	 * @returns {void}
+	 */
+export function handleCloseSession() {
+	document.addEventListener('click', (e) => {
+		if(e.target.matches('#button__close')) {
+			session.clear()
+			window.location.href = '/index.html'
+		}
+	})
 }
