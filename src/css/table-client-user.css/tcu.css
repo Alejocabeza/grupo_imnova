@@ -1,0 +1,49 @@
+.container_view_client-user{
+    width: 1100px;
+    height: auto;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #212529;
+    border: 1px solid #ecf0f1;
+    box-shadow: 0px 0px 60px -40px #ecf0f1;
+}
+
+.modal-content{
+    background-color: #212529;
+}
+
+.modal-title{
+    color: white;
+}
+
+.form_reg-client h5{
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.form_reg-client input{
+    border-radius: 20px;
+    border: 0;
+    width: 215px;
+    height: 33px;
+    margin: 5px;
+    padding-left: 10px;
+    background-color:#ecf0f1;
+}
+
+input::placeholder{
+    color: black;
+}
+
+.table{
+    margin: 25px 15px;
+    width: 97%;
+}
+
+.button_new-client{
+    width: 126.5px;
+    margin: 15px 40px 0 850px;
+}
+

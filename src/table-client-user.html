@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="author" content="Alejandro Cabeza" />
+	<meta name="description" content="Website Grupo Imnova" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./hamburger/hamburger.min.css" />	
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css" />
+	<title>Grupo Imnova - Proyectos</title>
+</head>
+<body>
+    <div class="container_view_client-user">
+        <!-- Button trigger modal -->
+        <div class="button_new-client">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Nuevo Cliente
+            </button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">DATOS DE IDENTIFICACIÓN DEL CLIENTE</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="">
+                      <div class="form_reg-client">
+                          <div class="form_date-reg">
+                            <h5>Datos del Registro</h5>
+                            <input id="reg-number" class="reg-number" type="text" placeholder="Nro. de Registro">
+                            <input id="reg-date" class="reg-date" type="date">
+                          </div>
+                          <div class="form_date-company">
+                            <h5>Datos de la Compañia</h5>
+                            <input id="name-client" class="name-client" type="text" placeholder="Nombre del Cliente">
+                            <input id="phone-client" class="phone-client" type="text" placeholder="Número de Teléfono">
+                            <input id="email-client" class="email-client" type="email" placeholder="Correo Electrónico">
+                            <input id="nit-client" class="nit-client" type="text" placeholder="NIT o RIF">
+                          </div>
+                          <div class="form_date-repre">
+                            <h5>Datos del Representante</h5>
+                            <input id="name-repre" class="name-repre" type="text" placeholder="Nombre del Representante">
+                            <input id="dni-repre" class="dni-repre" type="text" placeholder="DNI o Cédula">
+                            <input id="cargo-repre" class="cargo-repre" type="text" placeholder="Cargo">
+                            <input id="phone-repre" class="phone-repre" type="text" placeholder="Teléfono">
+                            <input id="email-repre" class="email-repre" type="email" placeholder="Correo Electrónico">
+                          </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Registrar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Limpiar</button>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">id</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Nombre del Cliente</th>
+                <th scope="col">NIT o RIF</th>
+                <th scope="col">Nombre del Representante</th>
+                <th scope="col">Cargo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

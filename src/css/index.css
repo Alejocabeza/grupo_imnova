@@ -8,6 +8,7 @@
 @import './login/index.css';
 @import './signin/index.css';
 @import './modal/index.css';
+@import url('./table-client-user.css/index.css');
 @import './boxTitle.css';
 
 :root {
