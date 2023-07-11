@@ -1,4 +1,4 @@
-import { persons } from './data/persons.js'
+import Persons from './data/persons.js'
 
 const article = document.querySelectorAll('#teamArticle')
 const modal = document.querySelector('#modalCustom')
@@ -13,7 +13,7 @@ export function handleOpenModal() {
 		item.addEventListener('click', (e) => {
 			if (e.target.matches('.team__button')) {
 				const title = item.querySelector('.team__h3').innerText
-				const person = persons.filter((person) => person.name === title)
+				const person = Persons.filter((person) => person.name === title)
 				if (person.length > 0) {
 					modal.querySelector('.modalCustom__img').setAttribute('src', person[0]['avatar'])
 					modal.querySelector('.modalCustom__h3').innerText = person[0]['name']

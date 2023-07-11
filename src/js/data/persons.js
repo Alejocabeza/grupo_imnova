@@ -1,4 +1,4 @@
-export const person = [
+const Persons = [
 	{
 		'name': 'Daniel J. Cabeza S.',
 		'puesto': 'Fundador',
@@ -36,3 +36,4 @@ export const person = [
 		'description': 'Ingeniero Civil. \n Planificación, Inspección y Supervisión de Proyectos. \n Universidad Nacional Experimental del Táchira. \n Bogotá.'
 	},
 ]
+export default Persons

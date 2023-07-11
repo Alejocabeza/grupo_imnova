@@ -1,5 +1,5 @@
-import { Service } from './data/services.js'
 import { finderByEmail, finderProjectsAll, finderProjectsByUser, finderUserAll } from './FetchData.js'
+import Services from './data/services.js'
 
 const session = sessionStorage
 const pathname = window.location.pathname.replace('/', '')
@@ -64,7 +64,7 @@ export function mappedValueService()
 		const box = document.querySelector('.services__div')
 		const template = document.getElementById('services__template')
 		const fragment = document.createDocumentFragment()
-		Service.forEach((service) => {
+		Services.forEach((service) => {
 			template.content.querySelector('.services__h3').textContent = service.name
 			template.content.querySelector('.services__p').textConent = service.desc
 			let clone = document.importNode(template.content, true)
