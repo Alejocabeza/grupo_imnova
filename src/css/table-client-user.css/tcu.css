@@ -1,4 +1,4 @@
-.container_view_client-user{
+.container_view{
     width: 1100px;
     height: auto;
     margin-top: 25px;
@@ -6,27 +6,32 @@
     border-radius: 10px;
     background-color: #212529;
     border: 1px solid #ecf0f1;
-    box-shadow: 0px 0px 60px -40px #ecf0f1;
+    box-shadow: 9px 9px 50px -35px #ecf0f1;
+}
+
+.modal-dialog div{
+    width: 560px;
 }
 
 .modal-content{
     background-color: #212529;
+    margin-top: 50px;
 }
 
 .modal-title{
     color: white;
 }
 
-.form_reg-client h5{
+.form_reg h5{
     color: white;
     font-size: 15px;
     margin-top: 5px;
 }
 
-.form_reg-client input{
-    border-radius: 20px;
+.form_reg input{
+    border-radius: 5px;
     border: 0;
-    width: 215px;
+    width: 250px;
     height: 33px;
     margin: 5px;
     padding-left: 10px;
@@ -45,5 +50,39 @@ input::placeholder{
 .button_new-client{
     width: 126.5px;
     margin: 15px 40px 0 850px;
+}
+
+.button_new-project{
+    width: 150px;
+    margin: 15px 40px 0 850px;
+}
+
+.reg-project input{
+    width: 29%;
+}
+
+.form_reg .name-project{
+    width: 92%;
+}
+
+.form_reg .date{
+    width: 130px
+}
+
+.form_reg .time-project{
+    width: 130px;
+    border-radius: 5px;
+}
+.form_reg .object-project{
+    width: 330px;
+}
+
+.form_date select{
+    height: 33px;
+}
+
+.form_date .project-description{
+    width: 92%;
+    height: 50px;
 }
 

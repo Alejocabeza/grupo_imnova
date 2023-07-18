@@ -38,11 +38,18 @@
 	}
 
 	.header__a {
+		background-color: #88acc0;
+		border-radius: 10px;
+		color:black;
 		padding: 0.5rem 1rem;
 		font-size: 1.5rem;
 		text-decoration: none;
-		color: var(--white);
 		padding: 1rem;
+	}
+
+	.header__a:hover {
+		background-color: #408db9;
+		color: white;
 	}
 
 	.header__a--active {

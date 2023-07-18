@@ -88,5 +88,34 @@
 		height: 15rem;
 	}
 
+	.info__container {
+		margin-top: 30px;
+		width: 100%;
+		height: 500px;
+		justify-content: flex-start;
+		flex-direction: row;
+		
+	}
+
+	.container{
+		padding: 18px;
+		width: 500px;
+		height: 415px;
+		line-height: 2;
+		background-color: #88acc020;
+		border-radius: 20px;
+		justify-content: flex-start;
+	}
+
+	.container h2{
+		font-size: 35px;
+	}
+
+	.history{
+		padding: 15px;
+		width: 95%;
+		height: 300px;
+	}
+
 /******** STYLE HOME *********/
 }
